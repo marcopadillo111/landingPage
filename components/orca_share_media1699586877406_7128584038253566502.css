@@ -1,0 +1,86 @@
+@import url("style.css");
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 0.8em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.item span {
+    color: var(--clr-rose);
+    font-size: var(--size-sm);
+}
+
+.item p {
+    margin-top: 0.2em;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* xs */
+@media (min-width: 374px) {
+    .item span {
+       font-size: var(--size-base);
+    }
+}
+
+/* sm */
+@media (min-width: 434px) {
+    .item span {
+       font-size: var(--size-lg);
+    }
+    .detailsContainer {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+} 
+
+/* md */
+@media (min-width: 767px) {
+    .item span {
+       font-size: var(--size-2xl);
+    }
+    .detailsContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 2em;
+        margin-right: 2em;
+        gap: 15px;
+        align-items: stretch;
+    }
+    .item {
+        flex: 1;
+        min-width: 40%;
+    }
+    .buttonCon {
+        font-size: var(--size-xl);
+    }
+}
+
+/* lg */    
+@media (min-width: 1023px) {
+    .item span {
+       font-size: var(--size-4xl);
+    }
+    
+    .detailsContainer {
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+    
+}
+
+/* xl */
+@media (min-width: 1439px) {
+    .item span {
+       font-size: var(--size-5xl);
+    }
+    .detailsContainer {
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+} 

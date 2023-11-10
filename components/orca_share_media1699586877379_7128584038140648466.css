@@ -1,0 +1,27 @@
+@import url("style.css");
+
+.contacts {
+    text-align: center;
+    padding-left: var(--size-sm);
+    padding-right: var(--size-sm);
+}
+
+.contacts p {
+    margin: 0;
+}
+
+/* md */
+@media (min-width: 767px) {
+    .contacts {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
+
+/* xl */
+@media (min-width: 1439px) {
+     .contacts {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+} 

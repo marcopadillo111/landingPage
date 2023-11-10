@@ -1,0 +1,57 @@
+@import url("style.css");
+
+
+.hero {
+    text-align: center;
+}
+
+.hero p {
+    margin: 0;
+}
+
+h1 {
+    line-height: 80%;
+    color: white;
+    font-size: var(--size-4xl);
+    margin: 0 1em;
+    font-weight: 900;
+}
+
+h1 span {
+    color: var(--clr-rose);
+}
+
+/* sm */
+@media (min-width: 434px) {
+
+    h1 {
+        font-size: var(--size-5xl);
+    }
+    
+} 
+
+/* md */
+@media (min-width: 767px) {
+   h1 {
+        font-size: var(--size-7xl);
+    }
+    
+    
+}
+
+/* lg */
+@media (min-width: 1023px) {
+    h1 {
+        font-size: var(--size-8xl);
+    }
+    
+    
+}
+
+/* xl */
+@media (min-width: 1439px) {
+    h1 {
+        font-size: var(--size-10xl);
+    }
+    
+} 
